@@ -1,0 +1,13 @@
+# Local secrets and installed packages
+.env
+node_modules/
+
+# SQLite transient files (keep carenexus.db itself if demo seed data is needed)
+carenexus.db-shm
+carenexus.db-wal
+
+# Logs and OS/editor files
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/

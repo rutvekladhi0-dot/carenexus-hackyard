@@ -1,0 +1,11 @@
+CARENEXUS LOCALHOST QUICK START (WINDOWS)
+
+1. Extract the complete ZIP into a normal folder, for example Desktop\CareNexus.
+2. Make sure Node.js LTS is installed. Official website: https://nodejs.org/
+3. Double-click START_CARENEXUS_LOCAL.bat.
+4. On first run, wait for npm to install dependencies.
+5. Open http://localhost:3000 in Chrome or Edge.
+6. Keep the black terminal window open while using the app. Close it / press Ctrl+C to stop the server.
+
+If port 3000 is already in use, close the other app using that port or change PORT in your environment before starting.
+This is a prototype. Do not use real patient data or rely on this prototype for emergency dispatch.

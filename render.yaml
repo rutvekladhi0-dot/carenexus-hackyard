@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: carenexus
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/demo-accounts
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /var/data/carenexus.db
+      - key: ELEVENLABS_API_KEY
+        sync: false
+      - key: ELEVENLABS_AGENT_ID
+        sync: false
+      - key: BROWSER_USE_API_KEY
+        sync: false
+      - key: AGENT37_API_KEY
+        sync: false
+    disk:
+      name: carenexus-data
+      mountPath: /var/data
+      sizeGB: 1
